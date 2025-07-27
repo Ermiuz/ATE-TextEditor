@@ -13,7 +13,7 @@ Put your plugins into the dir: "./plugins"
 ### How to write a plugin and make it work
 Every file `.py` in the dir `plugins/` will be load automatically if it contains at least a function called `init`.
 This function receives in input the widget from the editor (`QTextEdit`), thus you can modify or add functionalities and modifications.
-Just after the modification, run on the venv in terminal (which you can activate with "source venv/bin/activate - for linux & Mac" or "venv\Scripts\activate - for Windows") the following command **"pyinstaller --onefile --windowed --name "*" --add-data "../plugins/*;plugins" --add-binary "$(python -c 'import PyQt6.Qt6 as qt; print(qt.__file__)')/Qt6/plugins/*;PyQt6/Qt6/plugins" main.py "** -> (*the name is not necessary) to have the executable file with the custom plugins.
+Just after the modification, run on the venv in terminal (which you can activate with "source venv/bin/activate - for linux & Mac" or "venv\Scripts\activate - for Windows") the following command **"pyinstaller --onefile --windowed --name "*" --add-data "../plugins/*;plugins" --add-binary "$(python -c 'import PyQt6.Qt6 as qt; print(qt.__file__)')/Qt6/plugins/*;PyQt6/Qt6/plugins" main.py "** -> ("": the name is not necessary) to have the executable file with the custom plugins.
 
 -------------------------------------
 
