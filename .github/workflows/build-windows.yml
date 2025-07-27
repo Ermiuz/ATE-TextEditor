@@ -26,7 +26,7 @@ jobs:
 
       - name: Build EXE with PyInstaller
         run: |
-          pyinstaller --noconfirm --onefile --windowed --icon=assets\advanced_text_editor_logo.ico --name=AdvancedTextEditor src\main.py
+          pyinstaller --noconfirm --onefile --windowed --icon=assets\advanced_text_editor_logo.ico --name=ATEv1.0-Windows src\main.py
           
 
       - name: Upload EXE artifact
