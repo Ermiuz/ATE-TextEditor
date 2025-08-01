@@ -9,6 +9,7 @@ from utils.file_format_selector import FileFormatSelector
 from core.plugin_loader import load_plugins
 import sys
 import os
+from ui.code_editor import CodeEditor
 
 HIGHLIGHTING_SUPPORTED = [
     '.py', '.java', '.js', '.rb', '.rs', '.php', '.md', '.sh',
@@ -158,7 +159,7 @@ class TextEditor(QMainWindow):
         return True
     
     def add_new_tab(self, content="", filename="Nuovo documento", file_format=".txt"):
-        editor = TabData(file_format)
+        editor = CodeEditor(file_format)
         editor.setFont(QFont("Consolas", 12))
         if file_format in HIGHLIGHTING_SUPPORTED:
             Highlighter(editor.document(), file_format)
