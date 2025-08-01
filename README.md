@@ -1,4 +1,4 @@
---- This is an Advanced Text Editor v0.1.0 made by Ermanno Incontri © (with all rights reserved). It's Open-source and completely free and customizable, but not to make your own property!
+--- This is an Advanced Text Editor v0.1.0 made by Ermanno Incontri © (with all rights reserved). It's Open-source and completely free and customizable, but not to make your own property! - To start the Editor execute the file exec.sh! -
 
 ## 🔌 Custom Plugins
 ATE® supports **custom Python plugins**.
